@@ -3311,6 +3311,13 @@ border-radius: 12px;
   margin: 0;
 }
 
+@media (max-width: 1280px) {
+  .hero__title span{
+    left: 0;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .header__burger {
     display: flex;
