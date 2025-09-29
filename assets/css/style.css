@@ -3316,6 +3316,14 @@ border-radius: 12px;
     left: 0;
     margin-left: 0;
   }
+
+  .header__actions{
+    max-width: 300px;
+  }
+
+  .catalog__grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {
