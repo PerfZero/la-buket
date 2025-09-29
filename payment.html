@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header back_header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item header__item--dropdown">
+                        <a href="#" class="header__link">
+                            Каталог
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5834 5.83333L6.00008 1.25L1.41675 5.83333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="header__dropdown header__dropdown--catalog">
+                            <div class="header__dropdown-columns">
+                                <div class="header__dropdown-column">
+                                    <a href="#" class="header__dropdown-link">ЦВЕТЫ</a>
+                                    <a href="#" class="header__dropdown-link">БУКЕТЫ</a>
+                                    <a href="#" class="header__dropdown-link">КОМПОЗИЦИИ</a>
+                                </div>
+                                <div class="header__dropdown-column">
+                                    <a href="#" class="header__dropdown-link">ВАЗЫ</a>
+                                    <a href="#" class="header__dropdown-link">ШАРЫ</a>
+                                    <a href="#" class="header__dropdown-link">МЯГКАЯ ИГРУШКА</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Онлайн-витрина</a>
+                    </li>
+                    <li class="header__item header__item--dropdown">
+                        <a href="#" class="header__link">
+                            Клиентам
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5834 5.83333L6.00008 1.25L1.41675 5.83333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="payment.html" class="header__dropdown-link header__dropdown-link--active">ОПЛАТА</a>
+                            <a href="#" class="header__dropdown-link">ДОСТАВКА</a>
+                            <a href="#" class="header__dropdown-link">УХОД ЗА БУКЕТОМ</a>
+                            <a href="#" class="header__dropdown-link">ВОПРОС-ОТВЕТ</a>
+                        </div>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Блог</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header__logo">
+                <a href="#" class="header__logo-link"><img src="/assets/img/logo_footer.svg" alt=""></a>
+            </div>
+            
+            <div class="header__actions">
+                <a href="#" class="header__cart"><img src="/assets/img/cart.svg" alt=""></a>
+                <button class="header__button">Связаться</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="payment">
+        <div class="container">
+            <div class="payment__tabs">
+                <a href="payment.html" class="payment__tab payment__tab--active">ОПЛАТА</a>
+                <a href="#" class="payment__tab">ДОСТАВКА</a>
+                <a href="#" class="payment__tab">УХОД ЗА БУКЕТОМ</a>
+            </div>
+            
+            <div class="payment__content">
+                <div class="payment__info">
+                    <h1 class="payment__title">ОПЛАТА</h1>
+                    <p class="payment__subtitle">удобные и безопасные способы</p>
+                    
+                    <div class="payment__text">
+                        <p>Если вы заказываете букет через сайт, то оплатить его можно только после подтверждения заказа администратором.</p>
+                        <p>После подтверждения заказа на указанный вами номер телефона придет сообщение со ссылкой на оплату через систему электронных платежей «NewPay» либо, если вы указали способ оплаты «Перевод на карту», вам придет номер карты и сумма для перевода.</p>
+                        <p>При самовывозе вы можете оплатить букет банковской картой или наличными в любом из наших салонов.</p>
+                    </div>
+                </div>
+                
+                <div class="payment__methods">
+                    <div class="payment__method">
+                        <div class="payment__method-icon">
+                           <img src="/assets/img/pay_1.svg" alt="">
+                        </div>
+                        <div class="pay_text">
+                            <h3 class="payment__method-title">ПЕРЕВОД НА КАРТУ</h3>
+                            <p class="payment__method-desc">При заказе на сайте или в салоне</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment__method">
+                        <div class="payment__method-icon">
+                            <img src="/assets/img/pay_2.svg" alt="">
+                        </div>
+                        <div class="pay_text">
+                            <h3 class="payment__method-title">БАНКОВСКИЕ КАРТЫ</h3>
+                            <p class="payment__method-desc">Данный вид платежа осуществляется через систему электронных платежей «NewPay»</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment__method">
+                        <div class="payment__method-icon">
+                            <img src="/assets/img/pay_3.svg" alt="">
+                        </div>
+                        <div class="pay_text">
+                            <h3 class="payment__method-title">ТЕРМИНАЛ ОПЛАТЫ</h3>
+                            <p class="payment__method-desc">Данный вид платежа доступен только при самовывозе</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment__method">
+                        <div class="payment__method-icon">
+                            <img src="/assets/img/pay_4.svg" alt="">
+                        </div>
+                        <div class="pay_text">
+                            <h3 class="payment__method-title">НАЛИЧНЫЙ РАСЧЕТ</h3>
+                            <p class="payment__method-desc">Данный вид платежа доступен только при самовывозе</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row footer__row--first">
+                <div class="footer__logo">
+                    <img src="/assets/img/logo_footer.svg" alt="ЛЯ БУКЕТ">
+                </div>
+                <div class="footer__info">
+                    <p><img src="/assets/img/loc.svg" alt="">Г. Новосибирск, ул. Героев Революции, 35</p>
+                    <p>Время работы: с 09:00 до 21:00</p>
+                    <p class="footer__phone"><img src="/assets/img/phone.svg" alt="">+7 (923) 137-55-00</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/img/social_1.svg" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/img/social_2.svg" alt="Instagram">
+                    </a>
+                    <p>Instagram* признан экстремистской организацией и запрещен на территории РФ</p>
+                </div>
+            </div>
+            
+            <div class="footer__row footer__row--second">
+                <div class="footer__content">
+                    <div class="footer_text">
+                    <h3 class="footer__title">Оперативная доставка букетов в Новосибирске</h3>
+                    <p class="footer__description">Создаем не только качественный сервис доставки букетов, но и хотим подружиться с вами. Знать ваши важные даты, напоминать заранее, быть вашей палочкой-выручалочкой. Чтобы вопрос букета / подарка не беспокоил и вы всегда были уверены, что все пойдет по плану.</p>
+                </div>
+                    <div class="footer__company">
+                        <p>ИП Данилкин Никита Андреевич</p>
+                        <p>ОГРН 313547619600031</p>
+                        <p>ИНН 540963873553</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__row footer__row--third">
+                <div class="footer__links">
+                    <a href="#" class="footer__link">ПУБЛИЧНАЯ ОФЕРТА</a>
+                    <a href="#" class="footer__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <a href="#" class="footer__link">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+                </div>
+                <div class="footer__copyright">
+                    <p>© la-buket.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/slider.js"></script>
+</body>
+</html>

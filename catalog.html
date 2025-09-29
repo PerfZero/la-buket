@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header back_header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item header__item--dropdown">
+                        <a href="#" class="header__link">
+                            Каталог
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5834 5.83333L6.00008 1.25L1.41675 5.83333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="header__dropdown header__dropdown--catalog">
+                            <div class="header__dropdown-columns">
+                                <div class="header__dropdown-column">
+                                    <a href="#" class="header__dropdown-link">ЦВЕТЫ</a>
+                                    <a href="#" class="header__dropdown-link">БУКЕТЫ</a>
+                                    <a href="#" class="header__dropdown-link">КОМПОЗИЦИИ</a>
+                                </div>
+                                <div class="header__dropdown-column">
+                                    <a href="#" class="header__dropdown-link">ВАЗЫ</a>
+                                    <a href="#" class="header__dropdown-link">ШАРЫ</a>
+                                    <a href="#" class="header__dropdown-link">МЯГКАЯ ИГРУШКА</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Онлайн-витрина</a>
+                    </li>
+                    <li class="header__item header__item--dropdown">
+                        <a href="#" class="header__link">
+                            Клиентам
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5834 5.83333L6.00008 1.25L1.41675 5.83333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="header__dropdown">
+                            <a href="#" class="header__dropdown-link">ОПЛАТА</a>
+                            <a href="#" class="header__dropdown-link">ДОСТАВКА</a>
+                            <a href="#" class="header__dropdown-link">УХОД ЗА БУКЕТОМ</a>
+                            <a href="#" class="header__dropdown-link">ВОПРОС-ОТВЕТ</a>
+                        </div>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Блог</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header__logo">
+                <a href="#" class="header__logo-link"><img src="/assets/img/logo_footer.svg" alt=""></a>
+            </div>
+            
+            <div class="header__actions">
+                <a href="#" class="header__cart"><img src="/assets/img/cart.svg" alt=""></a>
+                <button class="header__button">Связаться</button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__filters">
+                <div class="catalog__categories">
+                    <button class="catalog__filter-btn catalog__filter-btn--active">Цветы</button>
+                    <button class="catalog__filter-btn">Букеты</button>
+                    <button class="catalog__filter-btn">Композиции</button>
+                    <button class="catalog__filter-btn">Вазы</button>
+                    <button class="catalog__filter-btn">Шары</button>
+                    <button class="catalog__filter-btn">Мягкая игрушка</button>
+                    <button class="catalog__filter-btn">до 2000 ₽</button>
+                    <button class="catalog__filter-btn">2000-4000 ₽</button>
+                    <button class="catalog__filter-btn">от 4000 ₽</button>
+                </div>
+                
+                <div class="catalog__price-filters">
+                    <div class="catalog__price-dropdown">
+                        <div class="catalog__price-header">
+                            <span class="catalog__price-title">ЦЕНА</span>
+                            <svg class="catalog__price-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5834 5.83333L6.00008 1.25L1.41675 5.83333" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="catalog__price-content">
+                            <div class="catalog__price-range">
+                                <input type="number" class="catalog__price-input" placeholder="150" value="150">
+                                <span class="catalog__price-dash">—</span>
+                                <input type="number" class="catalog__price-input" placeholder="576 000" value="576000">
+                            </div>
+                            <button class="catalog__price-ok">OK</button>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog__sort">
+                        <div class="catalog__sort-dropdown">
+                            <div class="catalog__sort-header">
+                                <span class="catalog__sort-text">по популярности</span>
+                                <svg class="catalog__sort-icon" width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1H22" stroke="#151515" stroke-opacity="0.5" stroke-width="1.5" />
+                                    <path d="M0 7H16" stroke="#151515" stroke-opacity="0.5" stroke-width="1.5" />
+                                    <path d="M0 13H10" stroke="#151515" stroke-opacity="0.5" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="catalog__sort-content">
+                                <div class="catalog__sort-option catalog__sort-option--active" data-value="popular">по популярности</div>
+                                <div class="catalog__sort-option" data-value="price-asc">по возрастанию цены</div>
+                                <div class="catalog__sort-option" data-value="price-desc">по убыванию цены</div>
+                                <div class="catalog__sort-option" data-value="new">по новинкам</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="catalog__results">
+                    <div class="catalog__results-info">
+                        <span class="catalog__results-text">Найдено: <strong>22</strong></span>
+                        <div class="catalog__active-filters">
+                            <div class="catalog__filter-chip">
+                                <span class="catalog__filter-chip-text">до 2000 ₽</span>
+                                <button class="catalog__filter-chip-remove"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10L10 1M1 1L10 10" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                  </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="catalog__grid">
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="/assets/img/product_1.jpg" alt="Букет №207">
+                        <div class="catalog__size">РАЗМЕР M</div>
+                    </div>
+                    <div class="catalog__info">
+                        <div class="catalog__number">БУКЕТ №207</div>
+                        <div class="catalog__price">
+                            <span class="catalog__price-current">3 650 P</span>
+                            <span class="catalog__price-old">4100 P</span>
+                        </div>
+                        <div class="catalog__buttons">
+                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
+                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="/assets/img/product_2.jpg" alt="Букет №198">
+                        <div class="catalog__size">РАЗМЕР M</div>
+                    </div>
+                    <div class="catalog__info">
+                        <div class="catalog__number">БУКЕТ №198</div>
+                        <div class="catalog__price">
+                            <span class="catalog__price-current">3 650 P</span>
+                            <span class="catalog__price-old">4100 P</span>
+                        </div>
+                        <div class="catalog__buttons">
+                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
+                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="/assets/img/product_3.jpg" alt="Букет №197">
+                        <div class="catalog__size">РАЗМЕР M</div>
+                    </div>
+                    <div class="catalog__info">
+                        <div class="catalog__number">БУКЕТ №197</div>
+                        <div class="catalog__price">
+                            <span class="catalog__price-current">5 400 P</span>
+                            <span class="catalog__price-old">6000 P</span>
+                        </div>
+                        <div class="catalog__buttons">
+                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
+                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__card">
+                    <div class="catalog__image">
+                        <img src="/assets/img/product_4.jpg" alt="Букет №211">
+                        <div class="catalog__size">РАЗМЕР M</div>
+                    </div>
+                    <div class="catalog__info">
+                        <div class="catalog__number">БУКЕТ №211</div>
+                        <div class="catalog__price">
+                            <span class="catalog__price-current">3 250 P</span>
+                            <span class="catalog__price-old">3700 P</span>
+                        </div>
+                        <div class="catalog__buttons">
+                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
+                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__load-more">
+                <button class="catalog__load-button">Загрузить еще</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row footer__row--first">
+                <div class="footer__logo">
+                    <img src="/assets/img/logo_footer.svg" alt="ЛЯ БУКЕТ">
+                </div>
+                <div class="footer__info">
+                    <p><img src="/assets/img/loc.svg" alt="">Г. Новосибирск, ул. Героев Революции, 35</p>
+                    <p>Время работы: с 09:00 до 21:00</p>
+                    <p class="footer__phone"><img src="/assets/img/phone.svg" alt="">+7 (923) 137-55-00</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/img/social_1.svg" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <img src="/assets/img/social_2.svg" alt="Instagram">
+                    </a>
+                    <p>Instagram* признан экстремистской организацией и запрещен на территории РФ</p>
+                </div>
+            </div>
+            
+            <div class="footer__row footer__row--second">
+                <div class="footer__content">
+                    <div class="footer_text">
+                    <h3 class="footer__title">Оперативная доставка букетов в Новосибирске</h3>
+                    <p class="footer__description">Создаем не только качественный сервис доставки букетов, но и хотим подружиться с вами. Знать ваши важные даты, напоминать заранее, быть вашей палочкой-выручалочкой. Чтобы вопрос букета / подарка не беспокоил и вы всегда были уверены, что все пойдет по плану.</p>
+                </div>
+                    <div class="footer__company">
+                        <p>ИП Данилкин Никита Андреевич</p>
+                        <p>ОГРН 313547619600031</p>
+                        <p>ИНН 540963873553</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__row footer__row--third">
+                <div class="footer__links">
+                    <a href="#" class="footer__link">ПУБЛИЧНАЯ ОФЕРТА</a>
+                    <a href="#" class="footer__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    <a href="#" class="footer__link">СОГЛАСИЕ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+                </div>
+                <div class="footer__copyright">
+                    <p>© la-buket.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const priceHeader = document.querySelector('.catalog__price-header');
+            const priceDropdown = document.querySelector('.catalog__price-dropdown');
+            
+            if (priceHeader && priceDropdown) {
+                priceHeader.addEventListener('click', function() {
+                    priceDropdown.classList.toggle('active');
+                });
+            }
+
+            const sortHeader = document.querySelector('.catalog__sort-header');
+            const sortDropdown = document.querySelector('.catalog__sort-dropdown');
+            const sortText = document.querySelector('.catalog__sort-text');
+            const sortOptions = document.querySelectorAll('.catalog__sort-option');
+            
+            if (sortHeader && sortDropdown) {
+                sortHeader.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    sortDropdown.classList.toggle('active');
+                });
+
+                sortOptions.forEach(option => {
+                    option.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        const value = this.getAttribute('data-value');
+                        const text = this.textContent;
+                        
+                        sortText.textContent = text;
+                        
+                        sortOptions.forEach(opt => opt.classList.remove('catalog__sort-option--active'));
+                        this.classList.add('catalog__sort-option--active');
+                        
+                        sortDropdown.classList.remove('active');
+                    });
+                });
+            }
+
+            document.addEventListener('click', function(e) {
+                if (sortDropdown && !sortDropdown.contains(e.target)) {
+                    sortDropdown.classList.remove('active');
+                }
+            });
+
+            const filterButtons = document.querySelectorAll('.catalog__filter-btn');
+            const activeFiltersContainer = document.querySelector('.catalog__active-filters');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (this.classList.contains('catalog__filter-btn--active')) {
+                        this.classList.remove('catalog__filter-btn--active');
+                        removeActiveFilter(this.textContent);
+                    } else {
+                        this.classList.add('catalog__filter-btn--active');
+                        addActiveFilter(this.textContent);
+                    }
+                });
+            });
+
+            function addActiveFilter(text) {
+                const existingChip = activeFiltersContainer.querySelector(`[data-filter="${text}"]`);
+                if (!existingChip) {
+                    const chip = document.createElement('div');
+                    chip.className = 'catalog__filter-chip';
+                    chip.setAttribute('data-filter', text);
+                    chip.innerHTML = `
+                        <span class="catalog__filter-chip-text">${text}</span>
+                        <button class="catalog__filter-chip-remove">×</button>
+                    `;
+                    activeFiltersContainer.appendChild(chip);
+                    
+                    chip.querySelector('.catalog__filter-chip-remove').addEventListener('click', function() {
+                        chip.remove();
+                        const button = Array.from(filterButtons).find(btn => btn.textContent === text);
+                        if (button) button.classList.remove('catalog__filter-btn--active');
+                    });
+                }
+            }
+
+            function removeActiveFilter(text) {
+                const chip = activeFiltersContainer.querySelector(`[data-filter="${text}"]`);
+                if (chip) {
+                    chip.remove();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
