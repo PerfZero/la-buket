@@ -119,6 +119,7 @@ body {
     background: none;
 }
 
+
 .back_header .header__dropdown {
   display: flex;
   flex-direction: column;
@@ -3707,3 +3708,19 @@ border-radius: 12px;
     grid-template-columns: 1fr;
 }
 }
+
+@media (max-width: 1280px){
+  .product__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: 768px){
+  .product__content {
+    grid-template-columns: 1fr ;
+    gap: 30px;
+  }
+}
+
