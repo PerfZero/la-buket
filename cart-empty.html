@@ -135,27 +135,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/js/slider.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqQuestions = document.querySelectorAll('.faq__question');
-            
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function() {
-                    const faqItem = this.closest('.faq__item');
-                    const isActive = faqItem.classList.contains('active');
-                    
-                    // Закрываем все открытые элементы
-                    document.querySelectorAll('.faq__item').forEach(item => {
-                        item.classList.remove('active');
-                    });
-                    
-                    // Открываем текущий элемент, если он был закрыт
-                    if (!isActive) {
-                        faqItem.classList.add('active');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="/assets/js/faq.js"></script>
 </body>
 </html>

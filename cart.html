@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header back_header">
         <div class="container">
             <button class="header__burger" id="burger-menu">
                 <span></span>
@@ -72,7 +72,7 @@
             </nav>
             
             <div class="header__logo">
-                <a href="#" class="header__logo-link"><img src="/assets/img/logo.svg" alt=""></a>
+                <a href="#" class="header__logo-link"><img src="/assets/img/logo_footer.svg" alt=""></a>
             </div>
             
             <div class="header__actions">
@@ -139,181 +139,194 @@
         </div>
     </div>
 
-    <section class="hero">
-        <div class="swiper hero__swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide hero__slide">
-                    <img src="/assets/img/back_1.png" alt="">
-                </div>
-                <div class="swiper-slide hero__slide">
-                    <img src="/assets/img/back_1.png" alt="">
-                </div>
-                <div class="swiper-slide hero__slide">
-                    <img src="/assets/img/back_1.png" alt="">
-                </div>
-            </div>
-            <div class="swiper-pagination hero__pagination"></div>
-        </div>
+    <main class="cart">
         <div class="container">
-            <h1 class="hero__title">доставка свежих букетов<br><span>в любую точку города</span></h1>
-            <button class="hero__button">Выбрать букеТ</button>
-        </div>
-    </section>
-
-    <section class="advantages">
-        <div class="container">
-            <div class="advantages__item">
-                <span class="advantages__text">ВСЕГДА СВЕЖИЕ ЦВЕТЫ</span>
-            </div>
-            <div class="advantages__item">
-                <span class="advantages__text">БЫСТРАЯ ДОСТАВКА</span>
-            </div>
-            <div class="advantages__item">
-                <span class="advantages__text">ТАЛАНТЛИВЫЕ ФЛОРИСТЫ</span>
-            </div>
-            <div class="advantages__item">
-                <span class="advantages__text">ВСЕГДА СВЕЖИЕ ЦВЕТЫ</span>
-            </div>
-            <div class="advantages__item">
-                <span class="advantages__text">БЫСТРАЯ ДОСТАВКА</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="catalog">
-        <div class="container">
-            <h2 class="catalog__title">КАТАЛОГ БУКЕТОВ</h2>
-            <p class="catalog__subtitle">от нежных до роскошных</p>
+            <h1 class="cart__title">ВАША КОРЗИНА</h1>
             
-            <div class="catalog__grid">
-                <div class="catalog__card">
-                    <div class="catalog__image">
+            <div class="cart__items">
+                <div class="cart__item">
+                    <div class="cart__item-image">
                         <img src="/assets/img/product_1.jpg" alt="Букет №207">
-                        <div class="catalog__size">РАЗМЕР M</div>
                     </div>
-                    <div class="catalog__info">
-                        <div class="catalog__number">БУКЕТ №207</div>
-                        <div class="catalog__price">
-                            <span class="catalog__price-current">3 650 P</span>
-                            <span class="catalog__price-old">4100 P</span>
-                        </div>
-                        <div class="catalog__buttons">
-                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
-                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
-                        </div>
+                    <div class="cart__item-info">
+                        <h3 class="cart__item-title">БУКЕТ №207</h3>
+                        <p class="cart__item-size">Размер: S</p>
                     </div>
+                    <div class="cart__item-quantity">
+                        <button class="cart__quantity-btn">-</button>
+                        <span class="cart__quantity">1</span>
+                        <button class="cart__quantity-btn">+</button>
+                    </div>
+                    <div class="cart__item-price">
+                        <span class="cart__price-old">4100 ₽</span>
+                        <span class="cart__price-current">3 650 ₽</span>
+                    </div>
+                    <button class="cart__item-remove">×</button>
                 </div>
 
-                <div class="catalog__card">
-                    <div class="catalog__image">
+                <div class="cart__item">
+                    <div class="cart__item-image">
                         <img src="/assets/img/product_2.jpg" alt="Букет №198">
-                        <div class="catalog__size">РАЗМЕР M</div>
                     </div>
-                    <div class="catalog__info">
-                        <div class="catalog__number">БУКЕТ №198</div>
-                        <div class="catalog__price">
-                            <span class="catalog__price-current">3 650 P</span>
-                            <span class="catalog__price-old">4100 P</span>
-                        </div>
-                        <div class="catalog__buttons">
-                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
-                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
-                        </div>
+                    <div class="cart__item-info">
+                        <h3 class="cart__item-title">БУКЕТ №198</h3>
+                        <p class="cart__item-size">Размер: M</p>
                     </div>
-                </div>
-
-                <div class="catalog__card">
-                    <div class="catalog__image">
-                        <img src="/assets/img/product_3.jpg" alt="Букет №197">
-                        <div class="catalog__size">РАЗМЕР M</div>
+                    <div class="cart__item-quantity">
+                        <button class="cart__quantity-btn">-</button>
+                        <span class="cart__quantity">1</span>
+                        <button class="cart__quantity-btn">+</button>
                     </div>
-                    <div class="catalog__info">
-                        <div class="catalog__number">БУКЕТ №197</div>
-                        <div class="catalog__price">
-                            <span class="catalog__price-current">5 400 P</span>
-                            <span class="catalog__price-old">6000 P</span>
-                        </div>
-                        <div class="catalog__buttons">
-                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
-                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
-                        </div>
+                    <div class="cart__item-price">
+                        <span class="cart__price-old">4100 ₽</span>
+                        <span class="cart__price-current">3 650 ₽</span>
                     </div>
-                </div>
-
-                <div class="catalog__card">
-                    <div class="catalog__image">
-                        <img src="/assets/img/product_4.jpg" alt="Букет №211">
-                        <div class="catalog__size">РАЗМЕР M</div>
-                    </div>
-                    <div class="catalog__info">
-                        <div class="catalog__number">БУКЕТ №211</div>
-                        <div class="catalog__price">
-                            <span class="catalog__price-current">3 250 P</span>
-                            <span class="catalog__price-old">3700 P</span>
-                        </div>
-                        <div class="catalog__buttons">
-                            <button class="catalog__button catalog__button--details">ПОДРОБНЕЕ</button>
-                            <button class="catalog__button catalog__button--cart">В КОРЗИНУ</button>
-                        </div>
-                    </div>
+                    <button class="cart__item-remove">×</button>
                 </div>
             </div>
-            <div class="catalog__load-more">
-                <button class="catalog__load-button">Загрузить еще</button>
+
+            <div class="cart__total">
+                <span class="cart__total-label">ИТОГО:</span>
+                <span class="cart__total-price">7 300 ₽</span>
             </div>
         </div>
-    </section>
+    </main>
 
-    <section class="about">
+    <section class="order-form">
         <div class="container">
-            <div class="about__content">
-                <div class="about__text">
-                    <h2 class="about__title">Почему мы?</h2>
-                    <p class="about__subtitle">быстрая доставка стильных букетов в Новосибирске</p>
-                    <p class="about__description">Каждый день мы создаем и экспериментируем, чтобы сделать наших клиентов счастливыми. Свежие цветы, стильное оформление букетов и только положительные эмоции!</p>
-                    
-                    <div class="about__features">
-                        <div class="about__feature">
-                            <img src="/assets/img/about_icon_1.svg" alt="">
-                            <div class="text">
-                            <h3 class="about__feature-title">Фирменный стиль</h3>
-                            <p class="about__feature-text">Вы всегда узнаете наши букеты по идеально подобранному составу, выдержанной палитре, необычным деталям и непревзойденному качеству цветов.</p>
-                        </div>
+            
+            <div class="order-form__content">
+                
+                <form class="order-form__form">
+                    <h2 class="order-form__title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+
+                    <div class="order-form__section">
+                        
+                        <div class="form__field">
+                            <label class="form__label">Имя покупателя*</label>
+                            <input type="text" class="form__input" placeholder="Ваше имя (анонимно)">
                         </div>
                         
-                        <div class="about__feature">
-                              <img src="/assets/img/about_icon_2.svg" alt="">
-                                                          <div class="text">
-
-                            <h3 class="about__feature-title">Свежесть</h3>
-                            <p class="about__feature-text">Ежедневно мы получаем поставки свежих цветов, которые проходят строгий контроль качества.</p>
-                       </div>
+                        <div class="form__field">
+                            <label class="form__label">Номер телефона покупателя*</label>
+                            <input type="tel" class="form__input" placeholder="Ваш номер (анонимно, для уведомлений)">
                         </div>
                         
-                        <div class="about__feature">
-                              <img src="/assets/img/about_icon_3.svg" alt="">
-                                                          <div class="text">
-
-                            <h3 class="about__feature-title">Доступность</h3>
-                            <p class="about__feature-text">Букеты на любой бюджет — от маленьких комплиментов до роскошных композиций, каждая покупка остается доступной без потери качества.</p>
-                       </div>
-                        </div>
-                        
-                        <div class="about__feature">
-                              <img src="/assets/img/about_icon_4.svg" alt="">
-                                                          <div class="text">
-
-                            <h3 class="about__feature-title">Всегда на связи</h3>
-                            <p class="about__feature-text">На нашем сайте вы можете сделать заказ без единого звонка или получить мгновенную консультацию флориста.</p>
-                       </div>
+                        <div class="form__field">
+                            <label class="form__label">Способ уведомления*</label>
+                            <div class="form__radio-group">
+                                <label class="form__radio">
+                                    <input type="radio" name="notification" value="call" checked>
+                                    <span class="form__radio-text">Звонок на телефон</span>
+                                </label>
+                                <label class="form__radio">
+                                    <input type="radio" name="notification" value="whatsapp">
+                                    <span class="form__radio-text">Написать в WhatsApp</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    
-                    <button class="about__button">каталог букетов</button>
-                </div>
-                
-                <div class="about__image">
-                    <img src="/assets/img/about_photo.jpg" alt="О нас">
+
+                    <div class="order-form__section">
+                        <h3 class="order-form__section-title">Доставка</h3>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Способ доставки*</label>
+                            <div class="form__radio-group">
+                                <label class="form__radio">
+                                    <input type="radio" name="delivery" value="courier" checked>
+                                    <span class="form__radio-text">Доставка курьером</span>
+                                </label>
+                                <label class="form__radio">
+                                    <input type="radio" name="delivery" value="pickup">
+                                    <span class="form__radio-text">Самовывоз</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="order-form__notice">
+                            <strong>Внимание!</strong> Сумму доставки рассчитывает администратор при оформлении заказа. Окончательную сумму заказа и доставки вы получите после подтверждения заказа администратором.
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Адрес доставки*</label>
+                            <input type="text" class="form__input" placeholder="Адрес доставки">
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Дата доставки*</label>
+                            <input type="text" class="form__input" placeholder="дд.мм.гггг">
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Время доставки*</label>
+                            <select class="form__select">
+                                <option value="09:00-10:00" selected>09:00-10:00</option>
+                                <option value="10:00-11:00">10:00-11:00</option>
+                                <option value="11:00-12:00">11:00-12:00</option>
+                                <option value="12:00-13:00">12:00-13:00</option>
+                                <option value="13:00-14:00">13:00-14:00</option>
+                                <option value="14:00-15:00">14:00-15:00</option>
+                                <option value="15:00-16:00">15:00-16:00</option>
+                                <option value="16:00-17:00">16:00-17:00</option>
+                                <option value="17:00-18:00">17:00-18:00</option>
+                                <option value="18:00-19:00">18:00-19:00</option>
+                                <option value="19:00-20:00">19:00-20:00</option>
+                                <option value="20:00-21:00">20:00-21:00</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Имя получателя</label>
+                            <input type="text" class="form__input" placeholder="Имя получателя">
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Номер телефона получателя</label>
+                            <input type="tel" class="form__input" placeholder="Номер телефона получателя">
+                        </div>
+                    </div>
+
+                    <div class="order-form__section">
+                        <h3 class="order-form__section-title">Оплата</h3>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Выберите способ оплаты*</label>
+                            <div class="form__radio-group">
+                                <label class="form__radio">
+                                    <input type="radio" name="payment" value="card" checked>
+                                    <span class="form__radio-text">Перевод на карту</span>
+                                </label>
+                                <label class="form__radio">
+                                    <input type="radio" name="payment" value="online">
+                                    <span class="form__radio-text">Банковской картой на сайте</span>
+                                </label>
+                                <label class="form__radio">
+                                    <input type="radio" name="payment" value="cash">
+                                    <span class="form__radio-text">Наличные при получении</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="order-form__notice">
+                            <strong>Внимание!</strong> После подтверждения заказа администратором, на номер указанный для уведомления придет инструкция для оплаты.
+                        </div>
+                    </div>
+
+                    <div class="order-form__section">
+                        <div class="form__field">
+                            <label class="form__label">Комментарий к заказу</label>
+                            <textarea class="form__textarea" placeholder="Введите сообщение....."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="order-form__submit">ОФОРМИТЬ ЗАКАЗ</button>
+                </form>
+
+                <div class="order-form__info">
+                    <p>Мы обрабатываем заказы с 09:00 до 21:00.</p>
+                    <p>При оформлении заказа в ночное время, букет может быть доставлен не ранее 11:00 следующего дня.</p>
+                    <p>При срочной доставке мы постараемся доставить букет, как можно скорее, точное время зависит от загруженности магазина и дорог.</p>
                 </div>
             </div>
         </div>
@@ -369,6 +382,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/js/slider.js"></script>
+    <script src="/assets/js/faq.js"></script>
     <script src="/assets/js/mobile-menu.js"></script>
 </body>
 </html>
