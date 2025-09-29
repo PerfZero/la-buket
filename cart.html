@@ -288,6 +288,19 @@
                     </div>
 
                     <div class="order-form__section">
+                        <h3 class="order-form__section-title">Промокод</h3>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Промокод</label>
+                            <div class="promo-field">
+                                <input type="text" class="form__input promo-input" placeholder="Введите промокод" id="promo-code">
+                                <button type="button" class="promo-btn" id="apply-promo">Применить</button>
+                            </div>
+                            <div class="promo-message" id="promo-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="order-form__section">
                         <h3 class="order-form__section-title">Оплата</h3>
                         
                         <div class="form__field">
@@ -317,6 +330,20 @@
                         <div class="form__field">
                             <label class="form__label">Комментарий к заказу</label>
                             <textarea class="form__textarea" placeholder="Введите сообщение....."></textarea>
+                        </div>
+                        
+                        <div class="form__field">
+                            <label class="form__label">Прикрепить фото</label>
+                            <div class="photo-upload">
+                                <input type="file" id="photo-upload" accept="image/*" multiple class="photo-upload__input">
+                                <label for="photo-upload" class="photo-upload__label">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5 6.25H14.375L12.5 4.375H7.5L5.625 6.25H2.5C1.8125 6.25 1.25 6.8125 1.25 7.5V15C1.25 15.6875 1.8125 16.25 2.5 16.25H17.5C18.1875 16.25 18.75 15.6875 18.75 15V7.5C18.75 6.8125 18.1875 6.25 17.5 6.25ZM10 13.75C8.625 13.75 7.5 12.625 7.5 11.25C7.5 9.875 8.625 8.75 10 8.75C11.375 8.75 12.5 9.875 12.5 11.25C12.5 12.625 11.375 13.75 10 13.75Z" fill="currentColor"/>
+                                    </svg>
+                                    <span>Выберите фото</span>
+                                </label>
+                                <div class="photo-preview" id="photo-preview"></div>
+                            </div>
                         </div>
                     </div>
 
@@ -384,5 +411,7 @@
     <script src="/assets/js/slider.js"></script>
     <script src="/assets/js/faq.js"></script>
     <script src="/assets/js/mobile-menu.js"></script>
+    <script src="/assets/js/promo.js"></script>
+    <script src="/assets/js/photo-upload.js"></script>
 </body>
 </html>
