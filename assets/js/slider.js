@@ -16,6 +16,39 @@ document.addEventListener('DOMContentLoaded', () => {
         speed: 1000,
     });
 
+    const advantagesSwiper = new Swiper('.advantages__swiper', {
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            reverseDirection: false,
+        },
+        effect: 'slide',
+        speed: 5000,
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        allowTouchMove: false,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            }
+        }
+    });
+
     const header = document.querySelector('.header');
     
     window.addEventListener('scroll', () => {

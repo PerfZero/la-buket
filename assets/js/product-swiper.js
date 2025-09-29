@@ -24,3 +24,4 @@ document.addEventListener('DOMContentLoaded', function() {
     productSwiper.controller.control = productThumbs;
     productThumbs.controller.control = productSwiper;
 });
+
