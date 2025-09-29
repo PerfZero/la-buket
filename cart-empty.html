@@ -15,6 +15,12 @@
 <body>
     <header class="header back_header">
         <div class="container">
+            <button class="header__burger" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="header__item header__item--dropdown">
@@ -75,6 +81,63 @@
             </div>
         </div>
     </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__overlay"></div>
+        <div class="mobile-menu__content">
+            <button class="mobile-menu__close" id="close-menu">×</button>
+            
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">
+                            КАТАЛОГ
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.41675 1.25L6.00008 5.83333L10.5834 1.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="mobile-menu__sublist">
+                            <li><a href="#" class="mobile-menu__sublink">ЦВЕТЫ</a></li>
+                            <li><a href="#" class="mobile-menu__sublink">БУКЕТЫ</a></li>
+                            <li><a href="#" class="mobile-menu__sublink">КОМПОЗИЦИИ</a></li>
+                            <li><a href="#" class="mobile-menu__sublink">ВАЗЫ</a></li>
+                            <li><a href="#" class="mobile-menu__sublink">ШАРЫ</a></li>
+                            <li><a href="#" class="mobile-menu__sublink">МЯГКАЯ ИГРУШКА</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">ОНЛАЙН-ВИТРИНА</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">
+                            КЛИЕНТАМ
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.41675 1.25L6.00008 5.83333L10.5834 1.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul class="mobile-menu__sublist">
+                            <li><a href="payment.html" class="mobile-menu__sublink">ОПЛАТА</a></li>
+                            <li><a href="delivery.html" class="mobile-menu__sublink">ДОСТАВКА</a></li>
+                            <li><a href="yxod.html" class="mobile-menu__sublink">УХОД ЗА БУКЕТОМ</a></li>
+                            <li><a href="faq.html" class="mobile-menu__sublink">ВОПРОС-ОТВЕТ</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">БЛОГ</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu__button">СВЯЗАТЬСЯ</button>
+            
+            <div class="mobile-menu__footer">
+                <p>© la-buket.com</p>
+            </div>
+        </div>
+    </div>
 
     <main class="cart-empty">
         <div class="container">

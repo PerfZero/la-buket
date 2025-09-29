@@ -929,6 +929,7 @@ body {
 .about__image img {
   width: 100%;
   height: 600px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -972,6 +973,7 @@ body {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 15px;
+  margin-bottom: 5px;
   text-transform: uppercase;
   color: #151515;
 }
@@ -1330,6 +1332,7 @@ gap: 15px;
 
 .product__warning{
   padding: 20px;
+  border-radius: 12px;
   background-color: #F8F9FD;
 }
 
@@ -1819,12 +1822,13 @@ gap: 15px;
 .care__image {
   flex-shrink: 0;
   width: 550px;
+
 }
 
 .care__image img {
   width: 100%;
   height: auto;
-
+border-radius: 12px;
   object-fit: cover;
 }
 
@@ -3073,6 +3077,7 @@ gap: 15px;
 
   .footer__row--first{
     flex-direction: row;
+    margin-top: 55px;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 20px;
