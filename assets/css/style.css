@@ -9,6 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.back_header .header__burger span{
+  background-color: #000 !important;
+  height:2px !important;
+}
+
 .container {
   max-width: 1420px;
   margin: 0 auto;
